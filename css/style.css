@@ -120,54 +120,6 @@ body {
 .auth-nav .list:not(:last-child) {
  margin-right: 50px;
 }
-/* .auth-nav .list {
-  align-items: baseline;  
-} */
-/* .auth-nav .list:nth-child(1)::before {
-  content: "";
-  background-image: url(../images/envelope.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: inline-block;
-  width: 16px;
-  height: 12px;
-  fill: var(--icon-soc-color);
-} */
-/* .auth-nav-mail {
-  align-items: center;
-  display: flex;
-} */
-/* .auth-nav-mail::before {
-  content: "";
-  background-image: url(../images/envelope.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: inline-block;
-  width: 16px;
-  height: 12px;
-  fill: var(--icon-soc-color);
-  margin-right: 10px;
-}
-
-.auth-nav-tel {
-  align-items: center;
-  display: flex;
-}
-
-.auth-nav-tel::before {
-  content: "";
-  background-image: url(../images/smartphone.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: inline-block;
-  width: 10px;
-  height: 16px;
-  fill: var(--icon-soc-color);
-  margin-right: 10px;
-} */
 
 .nav-mail-icon {
   width: 16px;
@@ -222,6 +174,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  width: 1600px;
+  margin: 0 auto;
 }
 
 .hero h1 {
@@ -432,6 +386,34 @@ body {
 
 }
 
+.clients-list {
+  display: flex;
+}
+
+.clients-list .item {
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  fill: currentColor;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 94px;
+}
+
+.clients-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-list .item:hover,
+.clients-list .item:focus {
+  border: 1px solid var(--acent-color);
+  fill: var(--acent-color);
+}
+
 /* ---------------------footer-------------------- */
 .footer {
   background-color: var(--footer-bg-color);
@@ -440,6 +422,7 @@ body {
 
 .footer-all {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-soc-list {
@@ -467,13 +450,6 @@ body {
 }
 
 
-/* .footer-soc-item {
-  width: 44px;
-  height: 44px;
-  background-color: pink;
-  border-radius: 50%;
-} */
-
 .footer-soc-item:not(:last-child) {
   margin-right: 10px;
 }
@@ -482,7 +458,7 @@ body {
   margin-left: 70px;
 }
 
-.footer-soc h2 {
+.footer-soc p {
  font-weight: 700;
  font-size: 14px;
  line-height: 1.14;
@@ -597,7 +573,13 @@ body {
   margin-right: 30px;
 }
 
-.portfolio-cards .item:hover {
+.portfolio-link {
+  display: block;
+}
+
+.portfolio-link:hover, 
+.portfolio-link:focus 
+{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
